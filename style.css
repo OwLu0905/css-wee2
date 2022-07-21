@@ -1,0 +1,361 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+}
+
+header {
+  background: url("./image/banner.png") center center;
+  /* background-size: cover; */
+  color: #ffffff;
+  height: 958px;
+}
+
+a,
+img {
+  display: block;
+}
+
+header .container {
+  width: 304px;
+  margin: 0 auto;
+
+  padding-top: 308px;
+  padding-bottom: 308px;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.325;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+header .container h2,
+p {
+  font-size: 24px;
+  font-style: italic;
+}
+header .container p {
+  line-height: 42px;
+}
+
+header .container h2 {
+  margin-bottom: 40px;
+}
+.media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.media a:hover {
+  filter: invert(10%) sepia(10%) saturate(1078%) brightness(75%) contrast(90%);
+  transform: scale(1.1);
+}
+
+.profile {
+  margin: 0 auto;
+  width: 512px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  padding-bottom: 56px;
+}
+
+.profile img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.about {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.pb-4 {
+  padding-bottom: 4px;
+}
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pb-23 {
+  padding-bottom: 23px;
+  margin: 0 auto;
+  /* border-bottom: 1px solid #000000; */
+}
+.divided {
+  border-top: 1px solid #000000;
+}
+.red-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+/* 第一次做使用的方法 */
+.red-list div {
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/* 小組討論+每日提到的偽元素 ::before */
+
+/* .red-dot {
+  display: flex;
+  align-items: center;
+}
+.red-dot::before {
+  content: " ";
+  margin-right: 16px;
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+} */
+
+.descript {
+  background-color: #000000;
+  border: 1px solid #707070;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 160px;
+  padding-top: 56px;
+  font-weight: 600;
+}
+
+.descript .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.highlight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.highlight a {
+  margin-bottom: 40px;
+}
+
+.descript .container h2 {
+  font-size: 64px;
+  line-height: 84px;
+  padding-bottom: 12px;
+}
+
+.descript .container h3 {
+  line-height: 42px;
+  padding-bottom: 32px;
+}
+
+.descript .container h2,
+h3 {
+  font-style: italic;
+}
+.descript .container p {
+  font-size: 20px;
+  padding-bottom: 68px;
+}
+
+.work {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 96px;
+  padding-top: 56px;
+  text-align: center;
+}
+.work h2 {
+  font-size: 64px;
+  line-height: 84px;
+  padding-bottom: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+.work-list {
+  font-size: 20px;
+  padding-bottom: 56px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.project li {
+  margin-bottom: 48px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 64px 0;
+  font-style: italic;
+}
+.footer .container {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .container h2 {
+  font-size: 64px;
+  line-height: 84px;
+  padding-bottom: 16px;
+}
+
+.contact li:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
